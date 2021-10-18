@@ -35,15 +35,88 @@
         <input type="month" name="" id="mes" />
         <label for="mes">Ingrese un mes del año, y tal</label>
         <br />
-        <hr />
         <textarea name="" id="areaTexto" cols="30" rows="10"></textarea>
         <label for="areaTexto"
           >Una zona para escribir hasta aburrirte, contal, no se envia a ninguna
           parte</label
         >
-        <hr />
-        <button></button>
+
+        <select name="lista" id="">
+          <optgroup label="A">
+            <option value="a1">A1</option>
+            <option value="a2">A2</option>
+          </optgroup>
+          <optgroup label="B">
+            <option value="b1" selected>B1</option>
+            <option value="b2">B2</option>
+          </optgroup>
+        </select>
+        <button type="submit" name="">submit</button>
+      </form>
+      <hr />
+
+      <form action="">
+        <fieldset name="datosPersonales">
+          <legend>Datos personales</legend>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" />
+          <label for="apellido">Apellido</label>
+          <input type="text" name="apellido" id="apellido" />
+          <label for="fechaNacimiento">Fecha de nacimiento</label>
+          <input
+            type="date"
+            name="fechaNacimiento"
+            id="fechaNacimiento"
+          /><br /><br />
+          <label for="Documento">Documento</label>
+          <input type="text" name="Documento" id="Documento" />
+          <select name="tipoDocumento" id="tipoDocumento">
+            <option value="DNI">DNI</option>
+            <option value="opcion2">Opcion2</option>
+            <option value="opcion3">Opcion3</option>
+          </select>
+        </fieldset>
+        <fieldset name="datosContacto">
+          <legend>Datos de contacto</legend>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="numero">Numero de telefono</label>
+          <input type="text" name="numero" id="numero" />
+          <select name="tipoNumero" id="tipoNumero">
+            <option value="celular">Celular</option>
+            <option value="Fijo">Fijo</option>
+          </select>
+        </fieldset>
+        <fieldset name="suscripciones">
+          <legend>Oportunidades unicas, sin igual</legend>
+          <input
+            type="checkbox"
+            name="suscripcion"
+            id="suscripcion"
+            value=""
+            checked
+          />
+          <label for="suscripcion"
+            >Desea recibir novedades de nuestra pagina, no venderemos sus datos,
+            lo juro</label
+          ><br />
+          <input type="radio" name="a" id="a" value="a" checked />
+          <label for="a">A1</label><br />
+          <input type="radio" name="b" id="b" value="b" />
+          <label for="b">B2</label><br />
+          <input type="radio" name="c" id="c" value="c" />
+          <label for="c">C3</label><br />
+          <datalist></datalist>
+        </fieldset>
+        <input type="submit" value="submit" />
       </form>
     </section>
+    <hr />
+    <iframe
+      src="index.html"
+      frameborder="0"
+      height="800px"
+      width="800px"
+    ></iframe>
   </body>
 </html>

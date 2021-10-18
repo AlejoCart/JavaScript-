@@ -1,0 +1,23 @@
+table{
+    background-color: khaki;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+th,
+table,
+td {
+  border: 1px solid black;
+}
+.pais {
+  background-color: crimson;
+}
+.valor {
+  background-color: green;
+}
+th{
+    background-color: indianred;
+}
+#fuente{
+    background-color: lightsalmon;
+} 

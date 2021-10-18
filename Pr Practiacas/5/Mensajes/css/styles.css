@@ -1,0 +1,36 @@
+#primera {
+  display: table;
+  color: rgb(63, 139, 187);
+  font-size: large;
+  width: fit-content;
+  height: fit-content;
+  background-color: lightskyblue;
+  border: 1px solid rgb(32, 126, 189);
+}
+#segunda {
+  display: table;
+  color: green;
+  font-size: large;
+  width: fit-content;
+  height: fit-content;
+  background-color: limegreen;
+  border: 1px solid lime;
+}
+#tercera {
+  display: table;
+  color: #9f6000;
+  font-size: large;
+  width: fit-content;
+  height: fit-content;
+  background-color: #feefb3;
+  border: 1px solid #9f6000;
+}
+#cuarta {
+  display: table;
+  color: #d8000c;
+  font-size: large;
+  width: fit-content;
+  height: fit-content;
+  background-color: #ffbaba;
+  border: 1px solid #df6000;
+}

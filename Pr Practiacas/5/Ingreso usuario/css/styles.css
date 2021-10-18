@@ -1,0 +1,12 @@
+#ingreso {
+  display: table;
+  width: fit-content;
+  height: fit-content;
+  border: 3px dashed #92bbcb;
+}
+#header {
+  background-color: #92bbcb;
+}
+img {
+  width: 16px;
+}
