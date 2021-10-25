@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calcualdora</title>
+    <script>
+      var num1;
+      var num2;
+      var resultado;
+
+      function suma(){
+        console.log("Dentro suma");
+        console.log("num1:"+num1+ " num2:"+ num2);
+        resultado= num1+num2;
+      }
+      function resta(){
+        console.log("Dentro resta");
+        resultado=num1-num2;
+      }
+      function multiplicacion(){
+        console.log("Dentro mult");
+        resultado=num1*num2;
+      }
+      function division(){
+        console.log("Dentro division");
+        if (num2!=0) {
+          resultado=num1/num2;
+        }else alert("No es posible dividir por 0");
+      }
+      function manejo(){
+
+        var lista=document.getElementById("opcion");
+        var opcion=parseInt(lista.value);
+        num1=parseInt(document.getElementById("valor1").value);
+        num2=parseInt(document.getElementById("valor2").value);
+        console.log("opcion:"+opcion);
+        switch (opcion){
+          case 1:suma(); break;
+          case 2:resta(); break;
+          case 3:multiplicacion(); break;
+          case 4:division(); break;
+          default: alert("Error");
+        }
+        document.getElementById("resultadoT").innerHTML=resultado;
+
+        /*console.log("Resultado:"+resultado);
+        console.log(document.getElementById("resultadoT").innerHTML);*/
+      }
+
+    </script>
+  </head>
+  <body>
+    <label for="valor1">Primer numero</label>
+    <input type="text" name="valor1" id="valor1">
+    <label for="valor2">Segundo numero</label>
+    <input type="text" name="valor2" id="valor2">
+    <p>Resultado</p>
+    <div contenteditable="true" id="resultadoT">
+    </div>
+    <select name="opcion" id="opcion">
+      <option value="1">Suma</option>
+      <option value="2">Resta</option>
+      <option value="3">Multiplicacion</option>
+      <option value="4">Division</option>
+    </select>
+    <input type="button" onclick="manejo()" name="boton" value="submit">
+  </body>
+</html>

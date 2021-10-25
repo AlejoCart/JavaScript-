@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calificacion</title>
+  </head>
+  <script>
+    function calificar(){
+      var nota= document.getElementById("nota").value;
+      if (nota>0) {
+        if (nota>=1 & nota<=3) alert("Muy deficiente");
+        else if(nota>3 && nota<=5 ) alert("Insuficiente");
+        else if(nota>5 && nota<=6) alert("Suficiente");
+        else if(nota>6 && nota<=7) alert("Bien");
+        else if(nota>7 && nota<=9) alert("Notable");
+        else{alert("Sobresaliente");}
+      }
+    }
+  </script>
+  <body>
+    <h1>Ingrese su nota</h1>
+    <input type="text" name="nota" placeholder="nota" id="nota">
+    <input type="button" onclick="calificar()" name="submit" value="submit">
+  </body>
+</html>

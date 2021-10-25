@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>conducir</title>
+    <script>
+    function mayor(){
+      var edad=document.getElementById("edad").value;
+      if(edad>0){
+      if (edad>=18) alert("Usted esta habilitado para conducir");
+      else alert("Usted no esta habilitado para conducir");
+    }else alert("Ingrese un numero valido");
+    }
+    </script>
+  </head>
+  <body>
+    <h2>Ingrese su edad</h2>
+    <input type="text" name="edad" placeholder="edad" id="edad">
+    <input type="button" onclick="mayor()" value="ingresar">
+  </body>
+</html>
